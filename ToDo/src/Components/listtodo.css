@@ -1,0 +1,30 @@
+.list {
+    background-color: #f0f0f0;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    font-size: 2.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttonX {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonX:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+

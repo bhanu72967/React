@@ -1,0 +1,40 @@
+.header {
+  color: yellow;
+  background-color: blue;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  height: 50px;
+  padding: 10px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.input {
+  width: 50%;
+  height: 30px;
+  font-size: 1.5em;
+  padding: 5px;
+  border: 1px soild black;
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 3px 0 black;
+}
+.button {
+  height: 40px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 2px solid black;
+  color: white;
+  background-color: blue;
+  box-shadow: 0 0 5px 0 black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button:hover {
+  background-color: white;
+  color: blue;
+}
