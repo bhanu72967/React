@@ -20,7 +20,7 @@ const Todo = () => {
           type="text"
           value={Task}
         />
-        <button type="Submit">Add</button>
+        <button type="Submit" >Add</button>
       </form>
       
         {TaskList.map((task, index) => (
