@@ -17,6 +17,7 @@ const Search = () => {
 
       if (!response.ok) {
         const errorData = await response.json();
+        console.log(errorData.message);
         throw new Error(errorData.message || "Something went wrong");
       }
 
