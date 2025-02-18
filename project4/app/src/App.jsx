@@ -22,6 +22,7 @@ const App = () => {
 
         setData(json);
         setFilteredData(json);
+
         setLoading(false);
       } catch (error) {
         setError("Unable to fetch data");
@@ -95,13 +96,13 @@ const App = () => {
         </TopContainer>
 
         <FilterContainer>
-          {filterBtns.map((value) => (
+          {filterBtns.map(({name, type}) => (
             <Button
-              isSelected={selectedBtn === value.type}
-              key={value.name}
-              onClick={() => filterFood(value.type)}
+              isSelected={selectedBtn === type}
+              key={name}
+              onClick={() => filterFood(type)}
             >
-              {value.name}
+              {name}
             </Button>
           ))}
         </FilterContainer>
@@ -162,5 +163,6 @@ export const Button = styled.button`
   cursor: pointer;
   &:hover {
     background-color: #f22f2f;
+    
   }
 `;
